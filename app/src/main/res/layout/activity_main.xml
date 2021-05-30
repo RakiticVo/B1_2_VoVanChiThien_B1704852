@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="#F00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Bài thực hành menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00f"
+            android:padding="5dp"
+            android:text="Danh sách"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:backgroundTint="#0019FF" />
+
+        <Button
+            android:id="@+id/btnPopup"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:clickable="true"
+            android:text="Hoạt động"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00f"
+            android:text="Thoát"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:backgroundTint="#00f" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Image"
+            android:src="@drawable/stop"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ẢNH ĐƯỢC CHỌN HIỂN THỊ"
+            android:textColor="#f0f"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>
